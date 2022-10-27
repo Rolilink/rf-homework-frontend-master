@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
-node api/index.js &
+yarn workspace @rainforesthq/api run start &
 server_pid=$!
 killserver() {
     kill -9 $server_pid
 }
 trap killserver EXIT
 
-yarn run start-dev
+yarn workspace @rainforesthq/app run start-dev

@@ -2,7 +2,7 @@
   "name": "rf-homework-frontend",
   "version": "0.1.0",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": ["packages/*", "api", "app"],
   "dependencies": {
     "classnames": "^2.3.2",
     "express": "^4.14.1",
